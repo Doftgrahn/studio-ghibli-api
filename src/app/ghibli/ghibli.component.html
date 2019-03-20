@@ -1,0 +1,10 @@
+<div *ngIf="!ghibliUrl">
+  <p>Can't see see shit.</p>
+</div>
+
+
+
+<div *ngIf="ghibliUrl">
+  <p *ngFor="let ghibli of ghibliUrl">{{ghibli.release_date }}</p>
+  <p *ngFor="let ghibli of ghibliUrl"> {{ghibli.title}}</p>
+</div>
